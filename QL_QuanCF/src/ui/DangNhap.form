@@ -54,10 +54,14 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jButton2" pref="306" max="32767" attributes="0"/>
-                                      <Component id="jTextField1" max="32767" attributes="0"/>
+                                      <Component id="txtUser" pref="306" max="32767" attributes="0"/>
                                       <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField2" max="32767" attributes="0"/>
+                                      <Component id="txtSDT" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="btnDangNhap" min="-2" pref="143" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="btnThoat" min="-2" pref="143" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                                   <Component id="jLabel8" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
                               </Group>
@@ -85,7 +89,7 @@
               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jTextField1" max="32767" attributes="0"/>
+                  <Component id="txtUser" max="32767" attributes="0"/>
                   <Component id="jLabel7" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
@@ -93,12 +97,15 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel4" max="32767" attributes="0"/>
-                  <Component id="jTextField2" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="txtSDT" min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" pref="38" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnDangNhap" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="btnThoat" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="71" max="32767" attributes="0"/>
               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -151,9 +158,9 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtUser">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Quang Tuan"/>
+        <Property name="text" type="java.lang.String" value="NV01"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JCheckBox" name="jCheckBox1">
@@ -161,7 +168,7 @@
         <Property name="text" type="java.lang.String" value="Ghi nh&#x1edb; &#x111;&#x103;ng nh&#x1ead;p"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="btnDangNhap">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="13" green="45" red="8b" type="rgb"/>
@@ -174,15 +181,18 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#x110;&#x103;ng k&#xfd;"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDangNhapActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Powered by Team 3"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtSDT">
       <Properties>
-        <Property name="text" type="java.lang.String" value="0235625658"/>
+        <Property name="text" type="java.lang.String" value="0235625658  "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
@@ -199,6 +209,23 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Username"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnThoat">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="13" green="45" red="8b" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tho&#xe1;t"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThoatActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

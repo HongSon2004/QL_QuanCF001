@@ -53,9 +53,10 @@ public class NhanVienDAO extends CofeDAO<NhanVien, String>{
                 while(rs.next()){
                     NhanVien entity=new NhanVien();
                     entity.setMaNV(rs.getString("MaNV"));
-                    entity.setMatKhau(rs.getString("MatKhau"));
-                    entity.setHoTen(rs.getString("HoTen"));
-                    entity.setVaiTro(rs.getBoolean("VaiTro"));
+                    entity.setTenNV(rs.getString("TenNV"));
+                    entity.setSDT(rs.getString("SDT"));
+                    entity.setGioitinh(rs.getBoolean("GioiTinh"));
+                    entity.setPhanquyen(rs.getBoolean("PhanQuyen"));
                     list.add(entity);
                 }
             } 
