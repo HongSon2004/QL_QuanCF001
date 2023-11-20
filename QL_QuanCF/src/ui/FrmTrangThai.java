@@ -1,7 +1,7 @@
-package ThamKhaoMain;
+package ui;
 
 // Khai báo thư viện
-import Model.ClsHoaDon;
+import entity.ClsHoaDon;
 import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.File;

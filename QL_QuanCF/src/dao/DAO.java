@@ -1,15 +1,14 @@
 
-package DaoThamKhao;
+package dao;
 
 
-import Model.ClsLoaiSanPham;
+import entity.ClsLoaiSanPham;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import Model.*;
 import java.util.Vector;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;

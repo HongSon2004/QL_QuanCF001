@@ -1,6 +1,6 @@
-package ThamKhaoMain;
+package ui;
 
-import DaoThamKhao.DAO;
+import dao.DAO;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
