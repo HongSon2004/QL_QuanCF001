@@ -1,4 +1,4 @@
-package ThamKhaoMain;
+package ui;
 
 import javax.swing.JOptionPane;
 

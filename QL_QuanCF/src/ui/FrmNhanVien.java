@@ -1,4 +1,4 @@
-package ThamKhaoMain;
+package ui;
 
 // Khai báo thư viện
 import java.sql.Connection;
