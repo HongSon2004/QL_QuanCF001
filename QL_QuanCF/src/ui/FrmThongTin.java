@@ -46,13 +46,11 @@ public class FrmThongTin extends javax.swing.JFrame {
         jLabel1.setText("THÔNG TIN ỨNG DỤNG");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel2.setText("Sinh viên: Trần Tuấn Đạt ");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel3.setText("Giảng viên: Huỳnh Quang Nghi");
+        jLabel3.setText("Ứng dụng quản lý quán caffe");
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel4.setText("MSSV:  B1805749");
 
         btnDong.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Hình/Thoát.png"))); // NOI18N
         btnDong.setText("Đóng");
@@ -119,7 +117,7 @@ public class FrmThongTin extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(btnDong)
                 .addContainerGap())
         );
