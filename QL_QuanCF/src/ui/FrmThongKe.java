@@ -1,4 +1,4 @@
-package ThamKhaoMain;
+package ui;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package Model;
+package entity;
 
 public class ClsChiTiet {
     private String user;

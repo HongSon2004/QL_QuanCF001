@@ -1,10 +1,10 @@
-package ThamKhaoMain;
+package ui;
 
 // Khai báo
 import java.sql.Connection;
 import java.sql.ResultSet;
-import DaoThamKhao.DAO;
-import Model.ClsMenu;
+import dao.DAO;
+import entity.ClsMenu;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
