@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-<<<<<<< HEAD
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/PRO1041/Code/QL_QuanCF/src/ui/FrmNhanVien.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmDangNhap.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmThongKe.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/TrangThai.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmMenu.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmTrangThai.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmNhanVien.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/DangNhap.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/MainMenu.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmGiaoDienChinh.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/XacNhan.java</file>
+            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmThongTin.java</file>
         </group>
-=======
-<<<<<<< HEAD
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/coffee/ui/TrangThai.java</file>
-            <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ThamKhaoMain/FrmTrangThai.java</file>
-        </group>
-=======
-<<<<<<< HEAD
-=======
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
->>>>>>> 2d1ced622d4ddcd95fd351c26f128e89d9665f96
->>>>>>> e20f3f720783f8c97dab25e965c7781a8934b0e0
     </open-files>
 </project-private>
