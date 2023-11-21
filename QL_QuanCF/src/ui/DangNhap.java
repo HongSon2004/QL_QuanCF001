@@ -174,11 +174,11 @@ public class DangNhap extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-=======
+
     private void btnDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangNhapActionPerformed
         this.dangNhap();
     }//GEN-LAST:event_btnDangNhapActionPerformed
@@ -186,7 +186,7 @@ public class DangNhap extends javax.swing.JFrame {
     private void btnThoatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThoatActionPerformed
         this.ketThuc();
     }//GEN-LAST:event_btnThoatActionPerformed
->>>>>>> a636cc0fca19d40b298386506b04ea9b85b74c39
+
 
     /**
      * @param args the command line arguments
