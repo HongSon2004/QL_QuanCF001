@@ -2,6 +2,7 @@ package ui;
 
 import dao.NhanVienDAO;
 import entity.NhanVien;
+import java.awt.event.KeyEvent;
 import utils.Auth;
 import utils.MsgBox;
 import java.util.List;
@@ -13,6 +14,11 @@ public class FrmNhanVien extends javax.swing.JFrame {
         super();
         initComponents();
         init();
+        btnTim.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnTimKeyPressed(evt);
+            }
+        });
     }
 
     @SuppressWarnings("unchecked")
@@ -21,12 +27,13 @@ public class FrmNhanVien extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
+        home1 = new javax.swing.JButton();
         btnThem = new javax.swing.JButton();
         btnSua = new javax.swing.JButton();
         btnXoa = new javax.swing.JButton();
         btnTim = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        tfTim = new javax.swing.JTextField();
+        txtTim = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         lbMaNV = new javax.swing.JLabel();
         lbHoten = new javax.swing.JLabel();
@@ -47,6 +54,13 @@ public class FrmNhanVien extends javax.swing.JFrame {
         lblTrangThai = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblNhanVien = new javax.swing.JTable();
+
+        home1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Hình/Nước.jpg"))); // NOI18N
+        home1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                home1ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addMouseListener(new java.awt.event.MouseAdapter() {
@@ -93,14 +107,24 @@ public class FrmNhanVien extends javax.swing.JFrame {
                 btnTimActionPerformed(evt);
             }
         });
+        btnTim.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btnTimKeyPressed(evt);
+            }
+        });
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("Tìm kiếm");
 
-        tfTim.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        tfTim.addMouseListener(new java.awt.event.MouseAdapter() {
+        txtTim.setFont(new java.awt.Font("Segoe UI Emoji", 0, 11)); // NOI18N
+        txtTim.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tfTimMouseClicked(evt);
+                txtTimMouseClicked(evt);
+            }
+        });
+        txtTim.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTimKeyPressed(evt);
             }
         });
 
@@ -286,13 +310,13 @@ public class FrmNhanVien extends javax.swing.JFrame {
                         .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(232, 232, 232)
+                                .addGap(306, 306, 306)
                                 .addComponent(jLabel5))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(159, 159, 159)
+                                .addGap(233, 233, 233)
                                 .addComponent(jLabel10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtTim, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnTim, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
@@ -311,7 +335,7 @@ public class FrmNhanVien extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnTim, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(tfTim, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtTim, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel10))))
                     .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13)
@@ -359,7 +383,7 @@ public class FrmNhanVien extends javax.swing.JFrame {
     }//GEN-LAST:event_btnThemActionPerformed
 
     private void btnTimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimActionPerformed
-        
+        this.timKiem();
     }//GEN-LAST:event_btnTimActionPerformed
 
     // Sự kiện của nút Sửa
@@ -377,9 +401,9 @@ public class FrmNhanVien extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowOpened
 
     // Sự kiện người dùng click vào text field tìm kiếm
-    private void tfTimMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tfTimMouseClicked
+    private void txtTimMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtTimMouseClicked
 
-    }//GEN-LAST:event_tfTimMouseClicked
+    }//GEN-LAST:event_txtTimMouseClicked
 
     // Sự kiện cancel
     private void formMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseReleased
@@ -388,11 +412,25 @@ public class FrmNhanVien extends javax.swing.JFrame {
 
     private void tblNhanVienMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblNhanVienMouseClicked
         // TODO add your handling code here:
-        if(evt.getClickCount() == 2){
+        if (evt.getClickCount() == 2) {
             this.row = tblNhanVien.getSelectedRow();
             this.edit();
         }
     }//GEN-LAST:event_tblNhanVienMouseClicked
+
+    private void btnTimKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnTimKeyPressed
+
+    }//GEN-LAST:event_btnTimKeyPressed
+
+    private void txtTimKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTimKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+        timKiem();
+        }
+    }//GEN-LAST:event_txtTimKeyPressed
+
+    private void home1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_home1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_home1ActionPerformed
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -441,6 +479,7 @@ public class FrmNhanVien extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton home;
+    private javax.swing.JButton home1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
@@ -457,10 +496,10 @@ public class FrmNhanVien extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdoNu;
     private javax.swing.JRadioButton rdoTruongPhong;
     private javax.swing.JTable tblNhanVien;
-    private javax.swing.JTextField tfTim;
     private javax.swing.JTextField txtMaNV;
     private javax.swing.JTextField txtSDT;
     private javax.swing.JTextField txtTenNV;
+    private javax.swing.JTextField txtTim;
     // End of variables declaration//GEN-END:variables
     NhanVienDAO dao = new NhanVienDAO();
     int row = -1;
@@ -469,13 +508,16 @@ public class FrmNhanVien extends javax.swing.JFrame {
         setLocationRelativeTo(null); // đưa cửa sổ ra giữa màn hình
         this.fillTable(); // đổ dữ liệu nhân viên vào bảng
         this.updateStatus(); // cập nhật trạng thái form
+        rdoNhanVien.setSelected(true);
+        rdoNu.setSelected(true);
     }
 
     void fillTable() {
         DefaultTableModel model = (DefaultTableModel) tblNhanVien.getModel();
         model.setRowCount(0);
         try {
-            List<NhanVien> list = dao.selectAll();
+            String keyword = txtTim.getText();
+            List<NhanVien> list = dao.selectByKeyword(keyword);
             for (NhanVien nv : list) {
                 Object[] row = {
                     nv.getMaNV(),
@@ -493,25 +535,25 @@ public class FrmNhanVien extends javax.swing.JFrame {
 
     void insert() {
         NhanVien nv = this.getForm();
-            try {
-                dao.insert(nv); // thêm mới
-                this.fillTable(); // đỗ lại bảng
-                this.clearForm(); // xóa trắng form
-                MsgBox.alert(this, "Thêm mới thành công!");
-            } catch (Exception e) {
-                MsgBox.alert(this, "Thêm mới thất bại!");
-            }  
+        try {
+            dao.insert(nv); // thêm mới
+            this.fillTable(); // đỗ lại bảng
+            this.clearForm(); // xóa trắng form
+            MsgBox.alert(this, "Thêm mới thành công!");
+        } catch (Exception e) {
+            MsgBox.alert(this, "Thêm mới thất bại!");
+        }
     }
 
     void update() {
         NhanVien nv = this.getForm();
-            try {
-                dao.update(nv); // cập nhật
-                this.fillTable(); // đổ lại bảng
-                MsgBox.alert(this, "Cập nhật thành công!");
-            } catch (Exception e) {
-                MsgBox.alert(this, "Cập nhật thất bại!");
-            }
+        try {
+            dao.update(nv); // cập nhật
+            this.fillTable(); // đổ lại bảng
+            MsgBox.alert(this, "Cập nhật thành công!");
+        } catch (Exception e) {
+            MsgBox.alert(this, "Cập nhật thất bại!");
+        }
     }
 
     void delete() {
@@ -541,11 +583,20 @@ public class FrmNhanVien extends javax.swing.JFrame {
         this.updateStatus();
     }
 
+    private void timKiem() {
+        this.fillTable();
+        this.clearForm();
+        this.row = -1;
+        this.updateStatus();
+    }
+
     void edit() {
         String manv = (String) tblNhanVien.getValueAt(this.row, 0);
         NhanVien nv = dao.selectById(manv);
         this.setForm(nv);
         this.updateStatus();
+        rdoNhanVien.setSelected(true);
+        rdoNu.setSelected(true);
     }
 
     void setForm(NhanVien nv) {
@@ -570,14 +621,11 @@ public class FrmNhanVien extends javax.swing.JFrame {
 
     void updateStatus() {
         boolean edit = (this.row >= 0);
-        boolean first = (this.row == 0);
-        boolean last = (this.row == tblNhanVien.getRowCount() - 1);
         // Trạng thái form
         txtMaNV.setEditable(!edit);
         btnThem.setEnabled(!edit);
         btnSua.setEnabled(edit);
         btnXoa.setEnabled(edit);
-
     }
 
     boolean isValidated() {

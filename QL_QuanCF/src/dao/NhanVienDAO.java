@@ -9,7 +9,7 @@ import java.util.List;
 
 public class NhanVienDAO extends CofeDAO<NhanVien, String>{
     public void insert(NhanVien model){
-        String sql="INSERT INTO NhanVien (MaNV, TenNV, SDT, GioiTinh, PhanQuyen) VALUES (?, ?, ?, ?)";
+        String sql="INSERT INTO NhanVien (MaNV, TenNV, SDT, GioiTinh, PhanQuyen) VALUES (?, ?, ?, ?, ?)";
         XJdbc.update(sql, 
                 model.getMaNV(), 
                 model.getTenNV(), 
@@ -70,5 +70,9 @@ public class NhanVienDAO extends CofeDAO<NhanVien, String>{
             throw new RuntimeException(ex);
         }
         return list;
+    }
+    public List<NhanVien> selectByKeyword(String keyword){
+        String sql="SELECT * FROM NhanVien WHERE TenNV LIKE ?";
+        return this.selectBySql(sql, "%"+keyword+"%");
     }
 }

@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmDangNhap.java</file>
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmThongKe.java</file>
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/BaoCao.java</file>
@@ -17,6 +18,9 @@
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmNhanVien.java</file>
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/XacNhan.java</file>
             <file>file:/C:/Users/hongs/Downloads/Du%20An%20QLCF/QL_QuanCF/src/ui/FrmThongTin.java</file>
+=======
+            <file>file:/H:/DuAn1/Du_An_Nhom_3/QL_QuanCF/src/ui/Main.java</file>
+>>>>>>> 870367f55d7d6225014cdaad97ae3ecf38be040c
         </group>
     </open-files>
 </project-private>
