@@ -371,13 +371,6 @@ public class FrmNhanVien extends javax.swing.JFrame {
         this.clearForm();
     }//GEN-LAST:event_btnMoiActionPerformed
 
-    private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
-        // TODO add your handling code here:
-        FrmGiaoDienChinh home = new FrmGiaoDienChinh();
-        this.setVisible(false);
-        home.setVisible(true);
-    }//GEN-LAST:event_homeActionPerformed
-
     private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
         this.insert();
     }//GEN-LAST:event_btnThemActionPerformed
@@ -431,6 +424,13 @@ public class FrmNhanVien extends javax.swing.JFrame {
     private void home1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_home1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_home1ActionPerformed
+
+    private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
+        // TODO add your handling code here:
+        FrmGiaoDienChinh home = new FrmGiaoDienChinh();
+        this.setVisible(false);
+        home.setVisible(true);
+    }//GEN-LAST:event_homeActionPerformed
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
