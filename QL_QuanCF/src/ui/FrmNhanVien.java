@@ -15,6 +15,7 @@ public class FrmNhanVien extends javax.swing.JFrame {
         initComponents();
         init();
         btnTim.addKeyListener(new java.awt.event.KeyAdapter() {
+            @Override
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnTimKeyPressed(evt);
             }
@@ -373,9 +374,9 @@ public class FrmNhanVien extends javax.swing.JFrame {
 
     private void homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homeActionPerformed
         // TODO add your handling code here:
-        FrmGiaoDienChinh home = new FrmGiaoDienChinh();
+        FrmGiaoDienChinh home2 = new FrmGiaoDienChinh();
         this.setVisible(false);
-        home.setVisible(true);
+        home2.setVisible(true);
     }//GEN-LAST:event_homeActionPerformed
 
     private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
@@ -510,6 +511,7 @@ public class FrmNhanVien extends javax.swing.JFrame {
         this.updateStatus(); // cập nhật trạng thái form
         rdoNhanVien.setSelected(true);
         rdoNu.setSelected(true);
+        isValidated();
     }
 
     void fillTable() {
