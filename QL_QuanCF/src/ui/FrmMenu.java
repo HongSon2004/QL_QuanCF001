@@ -24,8 +24,8 @@ public class FrmMenu extends javax.swing.JFrame {
 
     // Hàm kết nối cơ sở dữ liệu
     private void kn() {
-        String url = "jdbc:sqlserver://DELL-E5520\\SQLEXPRESS:1433;databasename=QuanLiQuanCaPhe;"
-                    + "username=sa;password=sa";
+        String url = "jdbc:sqlserver;databasename=QuanLiQuanCaPhe;"
+                    + "username=sa;password=171024";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             conn = DriverManager.getConnection(url);

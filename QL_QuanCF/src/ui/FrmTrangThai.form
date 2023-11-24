@@ -509,13 +509,10 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="Ban8" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="Ban16" alignment="0" pref="0" max="32767" attributes="0"/>
-                                          <Component id="Ban12" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="Ban8" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="Ban16" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="Ban12" alignment="0" min="-2" pref="48" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="Ban4" max="32767" attributes="0"/>
                               </Group>

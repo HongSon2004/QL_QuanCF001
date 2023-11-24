@@ -62,7 +62,7 @@ public class FrmTrangThai extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         setResizable(false);
         kn();
-        lblNhanVien.setText(FrmDangNhap.tenNV);
+        lblNhanVien.setText("");
         lblThoiGian.setText(String.valueOf(new SimpleDateFormat("HH:mm:ss").format(new java.util.Date())));
         lblNgay.setText(String.valueOf(new SimpleDateFormat("EEEE dd/MM/yyyy").format(new java.util.Date())));
         Disabled();
