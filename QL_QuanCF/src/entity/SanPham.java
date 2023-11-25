@@ -1,17 +1,27 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entity;
 
 /**
  *
- * @author Administrator
+ * @author hongs
  */
-public class ClsMenu {
+public class SanPham {
     private String spMa, spLoai, spTen, spDonVi;
-    long gia;
+    Double gia;
+
+    public SanPham() {
+    }
+
+    public SanPham(String spMa, String spLoai, String spTen, String spDonVi, Double gia) {
+        this.spMa = spMa;
+        this.spLoai = spLoai;
+        this.spTen = spTen;
+        this.spDonVi = spDonVi;
+        this.gia = gia;
+    }
 
     public String getSpMa() {
         return spMa;
@@ -45,14 +55,12 @@ public class ClsMenu {
         this.spDonVi = spDonVi;
     }
 
-    public long getGia() {
+    public Double getGia() {
         return gia;
     }
 
-    public void setGia(long gia) {
+    public void setGia(Double gia) {
         this.gia = gia;
     }
-    
-    
     
 }
