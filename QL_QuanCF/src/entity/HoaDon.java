@@ -1,28 +1,34 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package entity;
 
+import java.util.Date;
+
 /**
  *
- * @author Administrator
+ * @author hongs
  */
-public  class ClsHoaDon {
-    String ban, hoTenNV, ngay, thoigian, tenSP[];
+public class HoaDon {
+       String ban, hoTenNV, ngay, thoigian, tenSP[];
     int tongTien[], tienKhach, tienThua, soLuong[];
     int tienTongCong;
 
-    public int getTienTongCong() {
-        return tienTongCong;
+    public HoaDon() {
     }
 
-    public void setTienTongCong(int tienTongCong) {
+    public HoaDon(String ban, String hoTenNV, String ngay, String thoigian, String[] tenSP, int[] tongTien, int tienKhach, int tienThua, int[] soLuong, int tienTongCong) {
+        this.ban = ban;
+        this.hoTenNV = hoTenNV;
+        this.ngay = ngay;
+        this.thoigian = thoigian;
+        this.tenSP = tenSP;
+        this.tongTien = tongTien;
+        this.tienKhach = tienKhach;
+        this.tienThua = tienThua;
+        this.soLuong = soLuong;
         this.tienTongCong = tienTongCong;
-    }
-
-    public ClsHoaDon() {
     }
 
     public String getBan() {
@@ -97,6 +103,13 @@ public  class ClsHoaDon {
         this.soLuong = soLuong;
     }
 
+    public int getTienTongCong() {
+        return tienTongCong;
+    }
+
+    public void setTienTongCong(int tienTongCong) {
+        this.tienTongCong = tienTongCong;
+    }
     
-    
+        
 }
