@@ -8,10 +8,17 @@ import java.sql.SQLException;
 
 public class XJdbc {
     private static String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
+<<<<<<< HEAD
     private static String dburl="jdbc:sqlserver://localhost;database=QLCF";
    // private static String dburl = "jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=EduSys";
     private static String username="sa";
     private static String password="123";
+=======
+    private static String dburl="jdbc:sqlserver://localhost;database=QuanLiQuanCaPhe";
+   // private static String dburl = "jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=EduSys";
+    private static String username="sa";
+    private static String password="171024";
+>>>>>>> d7e94142a9e0b940694e6cc39f0a72864e5d6bb8
     
     /*
      * Nạp driver

@@ -35,12 +35,12 @@ public class Menu extends javax.swing.JPanel {
         init();
     }
     private void init() {
-        listMenu1.addItem(new Model_Menu("1", "trang 1", Model_Menu.MenuType.MENU));
-        listMenu1.addItem(new Model_Menu("2", "trang 2", Model_Menu.MenuType.MENU));
-        listMenu1.addItem(new Model_Menu("3", "trang 3", Model_Menu.MenuType.MENU));
+        listMenu1.addItem(new Model_Menu("1", "Menu", Model_Menu.MenuType.MENU));
+        listMenu1.addItem(new Model_Menu("2", "Hóa Đơn", Model_Menu.MenuType.MENU));
+        listMenu1.addItem(new Model_Menu("3", "Trang 3", Model_Menu.MenuType.MENU));
         listMenu1.addItem(new Model_Menu("4", "trang 4", Model_Menu.MenuType.MENU));
-        listMenu1.addItem(new Model_Menu("5", "trang 5", Model_Menu.MenuType.MENU));
-        listMenu1.addItem(new Model_Menu("", " ", Model_Menu.MenuType.EMPTY));
+        listMenu1.addItem(new Model_Menu("5", "Thống Kê", Model_Menu.MenuType.MENU));
+        listMenu1.addItem(new Model_Menu("5", "Đăng Xuất", Model_Menu.MenuType.MENU));
 
         /*listMenu1.addItem(new Model_Menu("", "My Data", Model_Menu.MenuType.TITLE));
         listMenu1.addItem(new Model_Menu("", " ", Model_Menu.MenuType.EMPTY));

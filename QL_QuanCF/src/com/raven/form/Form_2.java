@@ -80,6 +80,7 @@ public class Form_2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         jLabel8 = new javax.swing.JLabel();
         btnThem = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -274,10 +275,13 @@ public class Form_2 extends javax.swing.JPanel {
             }
         });
 
+=======
+>>>>>>> d7e94142a9e0b940694e6cc39f0a72864e5d6bb8
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -437,6 +441,13 @@ public class Form_2 extends javax.swing.JPanel {
                     .addComponent(btnIn)
                     .addComponent(btnThanhToan))
                 .addGap(16, 16, 16))
+=======
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+>>>>>>> d7e94142a9e0b940694e6cc39f0a72864e5d6bb8
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -634,6 +645,7 @@ public class Form_2 extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JButton Ban1;
     private javax.swing.JButton Ban2;
     private javax.swing.JButton Ban3;
@@ -670,6 +682,8 @@ public class Form_2 extends javax.swing.JPanel {
     private javax.swing.JLabel lblTrangThai;
     private javax.swing.JSpinner spnSoLuong;
     private javax.swing.JTextField tfTienNhanCuaKhach;
+=======
+>>>>>>> d7e94142a9e0b940694e6cc39f0a72864e5d6bb8
     // End of variables declaration//GEN-END:variables
     LoaiSPDAO loaispDao = new LoaiSPDAO();
     void fillComboBoxLoaiSP(){
